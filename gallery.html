@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Gallery | Olusegun Ariyo — Visual Archive</title>
+  <meta name="description" content="A visual archive of Olusegun Ariyo's journalism, advocacy campaigns, speaking engagements, and community work across Nigeria."/>
+  <meta property="og:title" content="Gallery | Olusegun Ariyo"/>
+  <meta property="og:type" content="website"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="stylesheet" href="assets/css/tailwind.css"/>
+  <!-- <link rel="stylesheet" href="assets/css/glassmorphism.css"/> -->
+  <!-- <link rel="stylesheet" href="assets/css/animations.css"/> -->
+  <!-- <link rel="stylesheet" href="assets/css/print.css" media="print"/> -->
+</head>
+<body>
+  <!-- Gallery Hero -->
+<section class="pt-32 pb-16 bg-gradient-to-br from-white to-red-50/20">
+  <div class="max-w-7xl mx-auto px-6 text-center reveal">
+    <h1 class="text-4xl md:text-6xl font-serif font-bold mb-4">Visual Stories</h1>
+    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Photography from the field: communities, campaigns, and the human stories behind urban transformation.</p>
+  </div>
+</section>
+
+<!-- Masonry Gallery -->
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Category Filters -->
+    <div class="flex flex-wrap justify-center gap-3 mb-10 reveal">
+      <button class="px-4 py-2 rounded-full bg-primary-red text-white text-sm font-medium">All</button>
+      <button class="px-4 py-2 rounded-full glass text-sm hover:bg-primary-red/10 transition">Advocacy</button>
+      <button class="px-4 py-2 rounded-full glass text-sm hover:bg-primary-red/10 transition">Events</button>
+      <button class="px-4 py-2 rounded-full glass text-sm hover:bg-primary-red/10 transition">Portraits</button>
+      <button class="px-4 py-2 rounded-full glass text-sm hover:bg-primary-red/10 transition">Urban Landscapes</button>
+    </div>
+    
+    <!-- Masonry Grid -->
+    <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+      <!-- Gallery Items -->
+      <div class="reveal break-inside-avoid group cursor-pointer">
+        <img src="assets/images/advocacy-2.jpeg" alt="Community meeting" class="w-full rounded-2xl shadow-lg hover:shadow-2xl transition-shadow glow-red" loading="lazy" data-lightbox="gallery"/>
+      </div>
+      <div class="reveal break-inside-avoid group cursor-pointer" style="transition-delay: 50ms">
+        <img src="assets/images/advocacy-1.jpeg" alt="Lagos skyline" class="w-full rounded-2xl shadow-lg hover:shadow-2xl transition-shadow glow-red" loading="lazy" data-lightbox="gallery"/>
+      </div>
+      <div class="reveal break-inside-avoid group cursor-pointer" style="transition-delay: 50ms">
+        <img src="assets/images/advocacy-3.jpeg" alt="Lagos skyline" class="w-full rounded-2xl shadow-lg hover:shadow-2xl transition-shadow glow-red" loading="lazy" data-lightbox="gallery"/>
+      </div>
+      <!-- Add 10-15 more images -->
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modal (Hidden by default) -->
+<div id="lightbox" class="fixed inset-0 bg-black/90 z-[100] hidden items-center justify-center p-4">
+  <button id="lightboxClose" class="absolute top-6 right-6 text-white hover:text-primary-red transition" aria-label="Close">
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+  </button>
+  <img id="lightboxImg" src="" alt="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl"/>
+  <p id="lightboxCaption" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-center max-w-2xl"></p>
+</div>
+
+<!-- Gallery JS (add to animations.js) -->
+<!-- <script>
+// Lightbox functionality
+document.querySelectorAll('[data-lightbox]').forEach(img => {
+  img.addEventListener('click', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = img.alt;
+    lightbox.classList.remove('hidden');
+    lightbox.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+document.getElementById('lightboxClose').addEventListener('click', () => {
+  const lightbox = document.getElementById('lightbox');
+  lightbox.classList.add('hidden');
+  lightbox.classList.remove('flex');
+  document.body.style.overflow = '';
+});
+
+// Close on escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.getElementById('lightboxClose').click();
+  }
+});
+</script> -->
+<script src="assets/js/site.js"></script>
+</body>

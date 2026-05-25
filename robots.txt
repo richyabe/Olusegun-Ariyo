@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+
+Sitemap: https://olusegunariyo.com/sitemap.xml
+Crawl-delay: 1

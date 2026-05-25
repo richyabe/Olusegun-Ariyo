@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>About | Olusegun Ariyo — Journalist, Publisher & Urban Planner</title>
+  <meta name="description" content="Learn about Olusegun Ariyo — Nigerian journalist, urban planner, publisher of Urban Express News, and social justice advocate with over 25 years of impact."/>
+  <meta property="og:title" content="About Olusegun Ariyo"/>
+  <meta property="og:type" content="website"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="stylesheet" href="assets/css/tailwind.css"/>
+  <link rel="stylesheet" href="assets/css/glassmorphism.css"/>
+  <link rel="stylesheet" href="assets/css/animations.css"/>
+  <link rel="stylesheet" href="assets/css/print.css" media="print"/>
+  <script>tailwind={config:{darkMode:'class',theme:{extend:{colors:{'primary-red':'#b30000'},fontFamily:{sans:['Inter','sans-serif'],serif:['Playfair Display','serif']}}}}}</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased">
+
+<!-- LOADER -->
+<div class="loading-screen" id="loadingScreen"><div class="loader"></div><span class="loader-text">About Olusegun</span></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-outline" id="cursorOutline"></div>
+<div id="scrollProgress"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-placeholder" title="Urban Express News"><img src="assets/images/logo.jpg" alt=""></div>
+      <span>Olusegun<span>.</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="advocacy.html">Advocacy</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="https://urbanexpresslive.com" target="_blank" rel="noopener">News</a></li>
+      <li><a href="https://urbanexpresslive.com/contact-us/" class="nav-cta">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:10px">
+      <button class="dark-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <button class="nav-mobile-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="about.html" class="active">About</a><a href="career.html">Career</a>
+  <a href="publications.html">Publications</a><a href="advocacy.html">Advocacy</a><a href="gallery.html">Gallery</a>
+  <a href="https://urbanexpresslive.com" target="_blank" rel="noopener">News ↗</a>
+  <a href="https://urbanexpresslive.com/contact-us/" class="m-cta">Contact Me</a>
+</div>
+
+<!-- ── HERO ── -->
+<section style="padding:140px 0 80px;background:linear-gradient(135deg,#fff 0%,#fafafa 60%,#fff5f5 100%);position:relative;overflow:hidden">
+  <div style="position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(179,0,0,.04),transparent 70%);pointer-events:none"></div>
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center" class="about-grid">
+
+      <!-- Portrait -->
+      <div class="reveal-left" style="position:relative">
+        <div style="position:absolute;top:-16px;right:-16px;bottom:-16px;left:-16px;border:1px solid rgba(179,0,0,.15);border-radius:12px;pointer-events:none"></div>
+        <div style="position:absolute;top:-32px;right:-32px;bottom:-32px;left:-32px;border:1px solid rgba(179,0,0,.06);border-radius:16px;pointer-events:none"></div>
+        <div class="img-placeholder dark-bg" style="aspect-ratio:3/4;border-radius:8px;flex-direction:column;gap:16px;box-shadow:0 24px 80px rgba(0,0,0,.18)">
+          <div style="font-size:9rem;color:rgba(179,0,0,.18);font-family:'Playfair Display',serif;font-weight:900;line-height:1"><img src="assets/images/advocacy-1.jpeg" alt=""></div>
+          <div style="font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.2)">Olusegun Ariyo</div>
+        </div>
+        <!-- Accent box -->
+        <div style="position:absolute;bottom:-24px;left:-24px;background:#0a0a0a;padding:20px 24px;border-radius:8px;box-shadow:0 12px 40px rgba(0,0,0,.3)">
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-style:italic;font-weight:600;color:#fff;margin-bottom:4px">Publisher & Editor-in-Chief</div>
+          <div style="font-size:.62rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#b30000">Urban Express News</div>
+        </div>
+        <!-- Red side bar -->
+        <div style="position:absolute;top:0;right:-8px;width:4px;height:55%;background:#b30000;border-radius:2px;box-shadow:0 0 16px rgba(179,0,0,.5)"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="reveal-right">
+        <div class="section-eyebrow" style="justify-content:flex-start">The Story</div>
+        <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,4rem);font-weight:900;line-height:1;margin-bottom:24px;color:#0a0a0a">A Life Built on <span style="color:#b30000">Truth</span></h1>
+        <p style="color:#374151;line-height:1.85;margin-bottom:16px;font-size:.98rem">Olusegun Ariyo is a <strong>Nigerian journalist, urban planner, writer, and social justice activist</strong> whose career spans some of Nigeria's most respected media institutions. His voice carries the weight of decades in the field — not as a mere observer, but as an active participant in shaping the nation's urban and civic discourse.</p>
+        <p style="color:#374151;line-height:1.85;margin-bottom:16px;font-size:.98rem">He is the founder, publisher and editor of <strong style="color:#b30000">Urban Express News</strong> — a platform built to give voice to the stories the mainstream often overlooks. As a certified urban planner, he brings a rare analytical lens to media commentary on Nigeria's cities, infrastructure challenges, land rights, and community development.</p>
+        <p style="color:#374151;line-height:1.85;margin-bottom:28px;font-size:.98rem">His book, <em><strong>"Solution to Processing Land & Property Documents in Lagos State"</strong></em>, stands as one of the most accessible and authoritative guides for Nigerians navigating the complex terrain of property ownership — a testament to his commitment to democratizing vital civic knowledge.</p>
+
+        <!-- Mission quote -->
+        <div style="background:rgba(179,0,0,.06);border-left:3px solid #b30000;padding:20px 24px;border-radius:0 8px 8px 0;margin-bottom:28px">
+          <p style="font-family:'Playfair Display',serif;font-size:1.1rem;font-style:italic;color:#0a0a0a;line-height:1.65;margin:0">"Every story I tell is a brick in the wall of a more just, more planned, and more equitable Nigeria."</p>
+        </div>
+
+        <!-- Tags -->
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px">
+          <span style="padding:6px 16px;border:1px solid rgba(179,0,0,.2);border-radius:99px;font-size:.72rem;font-weight:600;letter-spacing:.08em;color:#b30000">Journalist</span>
+          <span style="padding:6px 16px;border:1px solid rgba(179,0,0,.2);border-radius:99px;font-size:.72rem;font-weight:600;letter-spacing:.08em;color:#b30000">Publisher</span>
+          <span style="padding:6px 16px;border:1px solid rgba(179,0,0,.2);border-radius:99px;font-size:.72rem;font-weight:600;letter-spacing:.08em;color:#b30000">Urban Planner</span>
+          <span style="padding:6px 16px;border:1px solid rgba(179,0,0,.2);border-radius:99px;font-size:.72rem;font-weight:600;letter-spacing:.08em;color:#b30000">Author</span>
+          <span style="padding:6px 16px;border:1px solid rgba(179,0,0,.2);border-radius:99px;font-size:.72rem;font-weight:600;letter-spacing:.08em;color:#b30000">Advocate</span>
+        </div>
+
+        <div style="display:flex;gap:14px;flex-wrap:wrap">
+          <a href="career.html" class="btn-primary">View Career Journey</a>
+          <a href="https://urbanexpresslive.com/contact-us/" class="btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── THREE PILLARS ── -->
+<section class="section-pad" style="background:#0a0a0a">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:4rem">
+      <div class="section-eyebrow reveal" style="justify-content:center;color:rgba(179,0,0,.8)">Three Disciplines</div>
+      <h2 class="reveal" style="font-family:'Playfair Display',serif;color:#fff;margin-top:10px">One <span style="color:#b30000">Unified</span> Mission</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
+      <div class="reveal" style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:1rem;padding:2.5rem;transition:all .4s;position:relative;overflow:hidden" onmouseenter="this.style.borderColor='rgba(179,0,0,.4)';this.querySelector('.pillar-bar').style.width='100%'" onmouseleave="this.style.borderColor='rgba(255,255,255,.07)';this.querySelector('.pillar-bar').style.width='0'">
+        <div class="pillar-bar" style="position:absolute;bottom:0;left:0;height:3px;width:0;background:#b30000;box-shadow:0 0 14px rgba(179,0,0,.5);transition:width .4s"></div>
+        <div style="font-size:2.5rem;margin-bottom:20px">📰</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#fff;margin-bottom:14px">The Journalist</h3>
+        <p style="color:rgba(255,255,255,.45);font-size:.9rem;line-height:1.75">Trained across Nigeria's finest newsrooms — ThisDay, PM News, Commoner Newspaper, and The Nation — Olusegun pursues unvarnished truth with every byline, from boardrooms to street corners.</p>
+      </div>
+      <div class="reveal d2" style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:1rem;padding:2.5rem;transition:all .4s;position:relative;overflow:hidden" onmouseenter="this.style.borderColor='rgba(179,0,0,.4)';this.querySelector('.pillar-bar').style.width='100%'" onmouseleave="this.style.borderColor='rgba(255,255,255,.07)';this.querySelector('.pillar-bar').style.width='0'">
+        <div class="pillar-bar" style="position:absolute;bottom:0;left:0;height:3px;width:0;background:#b30000;box-shadow:0 0 14px rgba(179,0,0,.5);transition:width .4s"></div>
+        <div style="font-size:2.5rem;margin-bottom:20px">🏙️</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#fff;margin-bottom:14px">The Urban Planner</h3>
+        <p style="color:rgba(255,255,255,.45);font-size:.9rem;line-height:1.75">As a member of the Nigerian Institute of Town Planners, he applies systematic analytical thinking to Lagos' most complex challenges — housing, transportation, land rights, and community infrastructure.</p>
+      </div>
+      <div class="reveal d4" style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:1rem;padding:2.5rem;transition:all .4s;position:relative;overflow:hidden" onmouseenter="this.style.borderColor='rgba(179,0,0,.4)';this.querySelector('.pillar-bar').style.width='100%'" onmouseleave="this.style.borderColor='rgba(255,255,255,.07)';this.querySelector('.pillar-bar').style.width='0'">
+        <div class="pillar-bar" style="position:absolute;bottom:0;left:0;height:3px;width:0;background:#b30000;box-shadow:0 0 14px rgba(179,0,0,.5);transition:width .4s"></div>
+        <div style="font-size:2.5rem;margin-bottom:20px">⚖️</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#fff;margin-bottom:14px">The Advocate</h3>
+        <p style="color:rgba(255,255,255,.45);font-size:.9rem;line-height:1.75">Social justice is not a pastime — it is a calling. From Okada rider rights to environmental advocacy, he fights for those whose voices are too often silenced by policy, poverty, and power.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EDUCATION ── -->
+<section class="section-pad" style="background:#f9fafb">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:4rem">
+      <div class="section-eyebrow reveal" style="justify-content:center">Academic Foundation</div>
+      <h2 class="section-title reveal" style="margin-top:10px">Education & <span>Credentials</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;margin:0 auto">
+
+      <div class="glass-card reveal" style="padding:1.5rem;display:flex;align-items:flex-start;gap:16px">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(179,0,0,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <svg style="width:22px;height:22px;color:#b30000" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+        </div>
+        <div>
+          <div style="font-weight:700;font-size:.95rem;color:#0a0a0a;margin-bottom:4px">Lagos State University</div>
+          <div style="color:#6b7280;font-size:.82rem">Urban & Regional Planning</div>
+        </div>
+      </div>
+
+      <div class="glass-card reveal d1" style="padding:1.5rem;display:flex;align-items:flex-start;gap:16px">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(179,0,0,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <svg style="width:22px;height:22px;color:#b30000" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+        </div>
+        <div>
+          <div style="font-weight:700;font-size:.95rem;color:#0a0a0a;margin-bottom:4px">Yaba College of Technology</div>
+          <div style="color:#6b7280;font-size:.82rem">Mass Communication (ND)</div>
+        </div>
+      </div>
+
+      <div class="glass-card reveal d2" style="padding:1.5rem;display:flex;align-items:flex-start;gap:16px">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(179,0,0,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <svg style="width:22px;height:22px;color:#b30000" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+        </div>
+        <div>
+          <div style="font-weight:700;font-size:.95rem;color:#0a0a0a;margin-bottom:4px">The Polytechnic, Ibadan</div>
+          <div style="color:#6b7280;font-size:.82rem">Foundation Studies</div>
+        </div>
+      </div>
+
+      <div class="glass-card reveal d3" style="padding:1.5rem;display:flex;align-items:flex-start;gap:16px">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(179,0,0,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <svg style="width:22px;height:22px;color:#b30000" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div>
+          <div style="font-weight:700;font-size:.95rem;color:#0a0a0a;margin-bottom:4px">Nigerian Institute of Journalism</div>
+          <div style="color:#6b7280;font-size:.82rem">Advanced Journalism & Media Ethics</div>
+        </div>
+      </div>
+
+      <div class="glass-card reveal d4" style="padding:1.5rem;display:flex;align-items:flex-start;gap:16px;grid-column:1/-1">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(179,0,0,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <svg style="width:22px;height:22px;color:#b30000" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5"/></svg>
+        </div>
+        <div>
+          <div style="font-weight:700;font-size:.95rem;color:#0a0a0a;margin-bottom:4px">Nigerian Institute of Town Planners</div>
+          <div style="color:#6b7280;font-size:.82rem">Professional Membership · Urban Development Certification</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── VALUES / VISION ── -->
+<section class="section-pad" style="background:#fff">
+  <div class="container" style="max-width:900px">
+    <div style="text-align:center;margin-bottom:3rem">
+      <div class="section-eyebrow reveal" style="justify-content:center">Vision & Mission</div>
+      <h2 class="section-title reveal" style="margin-top:10px">What <span>Drives</span> the Work</h2>
+    </div>
+    <div class="glass-card reveal" style="padding:3rem;text-align:center;position:relative;overflow:hidden">
+      <div style="position:absolute;top:-50px;right:-50px;width:200px;height:200px;background:radial-gradient(circle,rgba(179,0,0,.06),transparent 70%);pointer-events:none"></div>
+      <svg style="width:52px;height:52px;color:#b30000;margin:0 auto 20px" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;margin-bottom:16px;color:#0a0a0a">My Mission</h3>
+      <p style="font-size:1.05rem;color:#374151;line-height:1.85;max-width:680px;margin:0 auto">To leverage the power of storytelling, urban planning expertise, and grassroots advocacy to create more just, sustainable, and inclusive cities — where every voice matters, every community thrives, and truth is never sacrificed for comfort.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="section-pad" style="background:#b30000;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;pointer-events:none"><div style="position:absolute;top:-40%;left:-10%;width:500px;height:500px;background:rgba(255,255,255,.06);border-radius:50%;filter:blur(60px)"></div></div>
+  <div class="container" style="position:relative;text-align:center">
+    <h2 class="reveal" style="font-family:'Playfair Display',serif;color:#fff;margin-bottom:16px">Ready to Collaborate?</h2>
+    <p class="reveal" style="color:rgba(255,255,255,.8);max-width:520px;margin:0 auto 32px;line-height:1.75">Join forces with a journalist and advocate who brings depth, integrity, and purpose to every engagement.</p>
+    <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="https://urbanexpresslive.com/contact-us/" style="padding:.9rem 2.2rem;background:#fff;color:#b30000;border-radius:99px;font-weight:700;font-size:.9rem;transition:all .3s" onmouseenter="this.style.transform='translateY(-2px)'" onmouseleave="this.style.transform=''">Get In Touch</a>
+      <a href="career.html" style="padding:.85rem 2.2rem;border:2px solid rgba(255,255,255,.5);color:#fff;border-radius:99px;font-weight:600;font-size:.9rem;transition:all .3s" onmouseenter="this.style.background='rgba(255,255,255,.12)'" onmouseleave="this.style.background=''">View Career</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo" style="margin-bottom:8px">Olusegun<span>.</span>Ariyo</div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><div class="nav-logo-placeholder" style="height:28px;font-size:.62rem">UEN</div><span style="font-size:.72rem;color:rgba(255,255,255,.3)">Urban Express News</span></div>
+        <p style="font-size:.875rem;line-height:1.7;max-width:280px;color:rgba(255,255,255,.4)">Journalist, publisher, urban planner, and social justice advocate dedicated to truth, equity, and sustainable urban futures.</p>
+        <div class="social-links">
+          <a href="https://twitter.com/olusegunariyo" target="_blank" rel="noopener" class="social-link" aria-label="Twitter"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+          <a href="https://linkedin.com/in/olusegunariyo" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://urbanexpresslive.com" target="_blank" rel="noopener" class="social-link" aria-label="Urban Express News"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg></a>
+          <a href="mailto:hello@olusegunariyo.com" class="social-link" aria-label="Email"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="career.html">Career</a></li><li><a href="publications.html">Publications</a></li><li><a href="gallery.html">Gallery</a></li></ul></div>
+      <div class="footer-col"><h4>Explore</h4><ul><li><a href="advocacy.html">Advocacy</a></li><li><a href="https://urbanexpresslive.com" target="_blank" rel="noopener">News Platform ↗</a></li><li><a href="https://urbanexpresslive.com/contact-us/">Contact</a></li><li><a href="publications.html#land-guide">Property Guide</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li style="color:rgba(255,255,255,.4);font-size:.875rem">Lagos, Nigeria</li><li><a href="mailto:hello@olusegunariyo.com" style="font-size:.875rem">hello@olusegunariyo.com</a></li><li><a href="https://urbanexpresslive.com" target="_blank" rel="noopener" style="font-size:.875rem">urbanexpresslive.com ↗</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span class="current-year">2025</span> Olusegun Ariyo. All rights reserved.</p>
+      <div style="display:flex;gap:20px;align-items:center"><a href="#">Privacy Policy</a><a href="#">Terms</a><button id="backToTop">Back to Top ↑</button></div>
+    </div>
+  </div>
+</footer>
+<button id="backToTopBtn" aria-label="Back to top"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/site.js"></script>
+<style>@media(max-width:900px){.about-grid{grid-template-columns:1fr!important;gap:60px!important}.about-grid>div:first-child{order:2}.about-grid>div:last-child{order:1}}</style>
+</body>
+</html>

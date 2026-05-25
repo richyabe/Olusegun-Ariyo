@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Career & Experience | Olusegun Ariyo</title>
+  <meta name="description" content="Explore Olusegun Ariyo's distinguished career across Nigeria's leading media institutions — from ThisDay Newspapers to founding Urban Express News."/>
+  <meta property="og:title" content="Career & Experience | Olusegun Ariyo"/>
+  <meta property="og:type" content="website"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="stylesheet" href="assets/css/tailwind.css"/>
+  <link rel="stylesheet" href="assets/css/glassmorphism.css"/>
+  <link rel="stylesheet" href="assets/css/animations.css"/>
+  <link rel="stylesheet" href="assets/css/print.css" media="print"/>
+  <script>tailwind={config:{darkMode:'class',theme:{extend:{colors:{'primary-red':'#b30000'},fontFamily:{sans:['Inter','sans-serif'],serif:['Playfair Display','serif']}}}}}</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased">
+
+<!-- LOADER -->
+<div class="loading-screen" id="loadingScreen"><div class="loader"></div><span class="loader-text">Career Journey</span></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-outline" id="cursorOutline"></div>
+<div id="scrollProgress"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-placeholder" title="Urban Express News"><img src="assets/images/logo.jpg" alt=""></div>
+      <span>Olusegun<span>.</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="career.html" class="active">Career</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="advocacy.html">Advocacy</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="https://urbanexpresslive.com" target="_blank" rel="noopener">News</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:10px">
+      <button class="dark-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <button class="nav-mobile-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="career.html" class="active">Career</a>
+  <a href="publications.html">Publications</a><a href="advocacy.html">Advocacy</a><a href="gallery.html">Gallery</a>
+  <a href="https://urbanexpresslive.com" target="_blank" rel="noopener">News ↗</a>
+  <a href="contact.html" class="m-cta">Contact Me</a>
+</div>
+
+<!-- ── PAGE HERO ── -->
+<section style="padding:140px 0 80px;background:#0a0a0a;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;pointer-events:none">
+    <div style="position:absolute;top:20%;left:5%;width:400px;height:400px;background:radial-gradient(circle,rgba(179,0,0,.07),transparent 70%);filter:blur(40px)"></div>
+    <div style="position:absolute;bottom:-10%;right:10%;width:500px;height:500px;background:radial-gradient(circle,rgba(179,0,0,.05),transparent 70%);filter:blur(50px)"></div>
+    <div style="position:absolute;top:30%;left:-5%;width:350px;height:1.5px;background:linear-gradient(90deg,transparent,rgba(179,0,0,.3),transparent);animation:streakX 4s ease-in-out infinite"></div>
+  </div>
+  <div class="container" style="position:relative;text-align:center">
+    <div class="section-eyebrow gsap-hero-item" style="justify-content:center;color:rgba(179,0,0,.8)">Professional Journey</div>
+    <h1 class="gsap-hero-item" style="font-family:'Playfair Display',serif;color:#fff;margin:12px 0 20px;font-size:clamp(2.5rem,6vw,5rem);font-weight:900">Career &amp; <span style="color:#b30000">Experience</span></h1>
+    <p class="gsap-hero-item" style="color:rgba(255,255,255,.45);max-width:600px;margin:0 auto;line-height:1.75;font-size:1rem">A distinguished career spanning Nigeria's most respected media institutions, built on integrity, investigative depth, and an unwavering commitment to truth and community.</p>
+  </div>
+</section>
+
+<!-- ── STATS ROW ── -->
+<section style="background:#b30000;padding:2.5rem 0">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center">
+      <div class="reveal">
+        <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:#fff;line-height:1"><span class="counter" data-target="25">0</span></div>
+        <div style="font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:6px">Years in Media</div>
+      </div>
+      <div class="reveal d1">
+        <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:#fff;line-height:1"><span class="counter" data-target="5">0</span></div>
+        <div style="font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:6px">Major Newsrooms</div>
+      </div>
+      <div class="reveal d2">
+        <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:#fff;line-height:1"><span class="counter" data-target="150">0</span></div>
+        <div style="font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:6px">Published Articles</div>
+      </div>
+      <div class="reveal d3">
+        <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:#fff;line-height:1"><span class="counter" data-target="1">0</span></div>
+        <div style="font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:6px">Published Book</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TIMELINE ── -->
+<section class="section-pad" style="background:#0a0a0a">
+  <div class="container" style="max-width:900px">
+    <div style="text-align:center;margin-bottom:4rem">
+      <div class="section-eyebrow reveal" style="justify-content:center;color:rgba(179,0,0,.8)">Work History</div>
+      <h2 class="reveal" style="font-family:'Playfair Display',serif;color:#fff;margin-top:10px">The <span style="color:#b30000">Road</span> Travelled</h2>
+    </div>
+
+    <div style="position:relative;padding-left:60px">
+      <!-- Vertical line -->
+      <div style="position:absolute;left:20px;top:8px;bottom:0;width:2px;background:linear-gradient(180deg,#b30000,rgba(179,0,0,.1))"></div>
+
+      <!-- Item 1 — Current -->
+      <div class="reveal" style="position:relative;margin-bottom:56px">
+        <div style="position:absolute;left:-47px;top:6px;width:16px;height:16px;border-radius:50%;background:#b30000;border:3px solid #0a0a0a;box-shadow:0 0 0 3px #b30000,0 0 20px rgba(179,0,0,.5)"></div>
+        <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:2rem;transition:border-color .3s" onmouseenter="this.style.borderColor='rgba(179,0,0,.4)'" onmouseleave="this.style.borderColor='rgba(255,255,255,.08)'">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:12px">
+            <div>
+              <div style="font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#b30000;margin-bottom:6px">2015 — Present</div>
+              <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:#fff;margin-bottom:4px">Publisher &amp; Editor-in-Chief</h3>
+              <div style="font-size:.9rem;color:rgba(255,255,255,.5);font-weight:500">Urban Express News</div>
+            </div>
+            <span style="background:rgba(179,0,0,.15);border:1px solid rgba(179,0,0,.3);color:#b30000;font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border-radius:99px;white-space:nowrap;animation:pulseGlow 2.5s ease-in-out infinite">● Current Role</span>
+          </div>
+          <p style="color:rgba(255,255,255,.45);font-size:.9rem;line-height:1.75;margin-bottom:16px">Founded and leads Urban Express News — Nigeria's bold digital platform dedicated to urban development journalism, investigative reporting, and social justice advocacy. Responsible for full editorial direction, content strategy, team management, and daily publishing operations. The platform reaches hundreds of thousands of monthly readers across Nigeria.</p>
+          <a href="https://urbanexpresslive.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;color:#b30000;font-size:.82rem;font-weight:600;transition:opacity .2s" onmouseenter="this.style.opacity='.7'" onmouseleave="this.style.opacity='1'">Visit urbanexpresslive.com ↗</a>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="reveal d1" style="position:relative;margin-bottom:56px">
+        <div style="position:absolute;left:-47px;top:6px;width:14px;height:14px;border-radius:50%;background:#0a0a0a;border:2px solid #b30000;box-shadow:0 0 12px rgba(179,0,0,.3)"></div>
+        <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:2rem;transition:border-color .3s" onmouseenter="this.style.borderColor='rgba(179,0,0,.35)'" onmouseleave="this.style.borderColor='rgba(255,255,255,.07)'">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#b30000;margin-bottom:6px">2010 — 2015</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:4px">Senior Reporter &amp; Correspondent</h3>
+          <div style="font-size:.88rem;color:rgba(255,255,255,.5);font-weight:500;margin-bottom:12px">The Nation Newspaper</div>
+          <p style="color:rgba(255,255,255,.4);font-size:.88rem;line-height:1.75">Specialized in investigative reporting on urban governance, land rights, and infrastructure policy at one of Nigeria's flagship broadsheet newspapers. Received editorial commendation for an in-depth exposé on Lagos property documentation bottlenecks that prompted a legislative review. Covered the Lagos State government's urban planning policies with analytical depth.</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="reveal d2" style="position:relative;margin-bottom:56px">
+        <div style="position:absolute;left:-47px;top:6px;width:14px;height:14px;border-radius:50%;background:#0a0a0a;border:2px solid #b30000;box-shadow:0 0 12px rgba(179,0,0,.3)"></div>
+        <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:2rem;transition:border-color .3s" onmouseenter="this.style.borderColor='rgba(179,0,0,.35)'" onmouseleave="this.style.borderColor='rgba(255,255,255,.07)'">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#b30000;margin-bottom:6px">2005 — 2010</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:4px">Staff Writer &amp; Urban Affairs Reporter</h3>
+          <div style="font-size:.88rem;color:rgba(255,255,255,.5);font-weight:500;margin-bottom:12px">PM News</div>
+          <p style="color:rgba(255,255,255,.4);font-size:.88rem;line-height:1.75">Wrote extensively on Lagos State affairs, local government policy, and community impact stories. Built a reputation for ground-level reporting that amplified marginalized voices, particularly those affected by housing insecurity, transport policy changes, and environmental degradation in Lagos' rapidly expanding peri-urban areas.</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="reveal d3" style="position:relative;margin-bottom:56px">
+        <div style="position:absolute;left:-47px;top:6px;width:14px;height:14px;border-radius:50%;background:#0a0a0a;border:2px solid #b30000;box-shadow:0 0 12px rgba(179,0,0,.3)"></div>
+        <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:2rem;transition:border-color .3s" onmouseenter="this.style.borderColor='rgba(179,0,0,.35)'" onmouseleave="this.style.borderColor='rgba(255,255,255,.07)'">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#b30000;margin-bottom:6px">2001 — 2005</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:4px">Reporter &amp; Feature Writer</h3>
+          <div style="font-size:.88rem;color:rgba(255,255,255,.5);font-weight:500;margin-bottom:12px">Commoner Newspaper</div>
+          <p style="color:rgba(255,255,255,.4);font-size:.88rem;line-height:1.75">Specialized in community journalism, bringing the lived experiences of ordinary Nigerians to print. Developed foundational skills in field reporting, source cultivation, and investigative fact-finding. This period shaped a deep commitment to working-class and grassroots storytelling that defines his journalistic identity to this day.</p>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="reveal d4" style="position:relative">
+        <div style="position:absolute;left:-47px;top:6px;width:14px;height:14px;border-radius:50%;background:#0a0a0a;border:2px solid rgba(179,0,0,.5);box-shadow:0 0 12px rgba(179,0,0,.2)"></div>
+        <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:2rem;transition:border-color .3s" onmouseenter="this.style.borderColor='rgba(179,0,0,.35)'" onmouseleave="this.style.borderColor='rgba(255,255,255,.07)'">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#b30000;margin-bottom:6px">1998 — 2001</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:4px">Staff Journalist</h3>
+          <div style="font-size:.88rem;color:rgba(255,255,255,.5);font-weight:500;margin-bottom:12px">ThisDay Newspapers</div>
+          <p style="color:rgba(255,255,255,.4);font-size:.88rem;line-height:1.75">Launched his professional career at one of Nigeria's most prestigious and internationally recognized newspapers. Built core skills in hard news writing, long-form feature journalism, editorial standards, and source management under the rigorous editorial culture of one of Africa's most respected newsrooms.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="red-divider"></div>
+
+<!-- ── SKILLS ── -->
+<section class="section-pad" style="background:#fff">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:4rem">
+      <div class="section-eyebrow reveal" style="justify-content:center">Expertise</div>
+      <h2 class="section-title reveal" style="margin-top:10px">Skills &amp; <span>Disciplines</span></h2>
+      <p class="reveal" style="color:#6b7280;max-width:540px;margin:14px auto 0;line-height:1.75">A rare combination of editorial craft, urban planning rigour, and community advocacy forged across decades of field work.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+
+      <div class="glass-card reveal" style="padding:2rem">
+        <div style="width:52px;height:52px;border-radius:12px;background:rgba(179,0,0,.08);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:1.6rem">✍️</div>
+        <h4 style="font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#0a0a0a;margin-bottom:10px">Investigative Journalism</h4>
+        <p style="font-size:.85rem;color:#6b7280;line-height:1.7">Long-form investigations, source development, document analysis, accountability reporting, and editorial leadership.</p>
+        <div style="margin-top:14px;height:4px;background:#f0f0f0;border-radius:99px;overflow:hidden"><div style="height:100%;background:linear-gradient(90deg,#b30000,#e00000);width:95%;border-radius:99px"></div></div>
+      </div>
+
+      <div class="glass-card reveal d1" style="padding:2rem">
+        <div style="width:52px;height:52px;border-radius:12px;background:rgba(179,0,0,.08);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:1.6rem">🏙️</div>
+        <h4 style="font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#0a0a0a;margin-bottom:10px">Urban &amp; Regional Planning</h4>
+        <p style="font-size:.85rem;color:#6b7280;line-height:1.7">City master planning, land use policy, housing policy, transportation systems, and infrastructure assessment.</p>
+        <div style="margin-top:14px;height:4px;background:#f0f0f0;border-radius:99px;overflow:hidden"><div style="height:100%;background:linear-gradient(90deg,#b30000,#e00000);width:88%;border-radius:99px"></div></div>
+      </div>
+
+      <div class="glass-card reveal d2" style="padding:2rem">
+        <div style="width:52px;height:52px;border-radius:12px;background:rgba(179,0,0,.08);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:1.6rem">📣</div>
+        <h4 style="font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#0a0a0a;margin-bottom:10px">Public Advocacy &amp; Campaigns</h4>
+        <p style="font-size:.85rem;color:#6b7280;line-height:1.7">Campaign strategy, community organizing, stakeholder communications, policy engagement, and media advocacy.</p>
+        <div style="margin-top:14px;height:4px;background:#f0f0f0;border-radius:99px;overflow:hidden"><div style="height:100%;background:linear-gradient(90deg,#b30000,#e00000);width:90%;border-radius:99px"></div></div>
+      </div>
+
+      <div class="glass-card reveal d1" style="padding:2rem">
+        <div style="width:52px;height:52px;border-radius:12px;background:rgba(179,0,0,.08);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:1.6rem">📱</div>
+        <h4 style="font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#0a0a0a;margin-bottom:10px">Digital Publishing &amp; Media</h4>
+        <p style="font-size:.85rem;color:#6b7280;line-height:1.7">Digital media strategy, online audience development, SEO journalism, content management, and newsletter publishing.</p>
+        <div style="margin-top:14px;height:4px;background:#f0f0f0;border-radius:99px;overflow:hidden"><div style="height:100%;background:linear-gradient(90deg,#b30000,#e00000);width:85%;border-radius:99px"></div></div>
+      </div>
+
+      <div class="glass-card reveal d2" style="padding:2rem">
+        <div style="width:52px;height:52px;border-radius:12px;background:rgba(179,0,0,.08);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:1.6rem">📖</div>
+        <h4 style="font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#0a0a0a;margin-bottom:10px">Book Authorship &amp; Research</h4>
+        <p style="font-size:.85rem;color:#6b7280;line-height:1.7">Long-form research writing, policy guides, academic references, and civic education publishing.</p>
+        <div style="margin-top:14px;height:4px;background:#f0f0f0;border-radius:99px;overflow:hidden"><div style="height:100%;background:linear-gradient(90deg,#b30000,#e00000);width:80%;border-radius:99px"></div></div>
+      </div>
+
+      <div class="glass-card reveal d3" style="padding:2rem">
+        <div style="width:52px;height:52px;border-radius:12px;background:rgba(179,0,0,.08);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:1.6rem">⚖️</div>
+        <h4 style="font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:#0a0a0a;margin-bottom:10px">Social Justice &amp; Human Rights</h4>
+        <p style="font-size:.85rem;color:#6b7280;line-height:1.7">Human rights reporting, environmental justice advocacy, community rights campaigns, and civic engagement leadership.</p>
+        <div style="margin-top:14px;height:4px;background:#f0f0f0;border-radius:99px;overflow:hidden"><div style="height:100%;background:linear-gradient(90deg,#b30000,#e00000);width:92%;border-radius:99px"></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── MEDIA HOUSES ── -->
+<section class="section-pad" style="background:#f9fafb">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3.5rem">
+      <div class="section-eyebrow reveal" style="justify-content:center">Media Affiliations</div>
+      <h2 class="section-title reveal" style="margin-top:10px">Newsrooms That <span>Shaped</span> the Career</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:20px;align-items:center">
+
+      <div class="reveal" style="background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:12px;padding:2rem 1.5rem;text-align:center;transition:all .35s;cursor:default" onmouseenter="this.style.borderColor='#b30000';this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 40px rgba(179,0,0,.1)'" onmouseleave="this.style.borderColor='rgba(0,0,0,.07)';this.style.transform='';this.style.boxShadow=''">
+        <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:800;color:#0a0a0a;margin-bottom:6px">ThisDay</div>
+        <div style="font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#9ca3af">Newspapers</div>
+      </div>
+
+      <div class="reveal d1" style="background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:12px;padding:2rem 1.5rem;text-align:center;transition:all .35s;cursor:default" onmouseenter="this.style.borderColor='#b30000';this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 40px rgba(179,0,0,.1)'" onmouseleave="this.style.borderColor='rgba(0,0,0,.07)';this.style.transform='';this.style.boxShadow=''">
+        <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:800;color:#0a0a0a;margin-bottom:6px">PM News</div>
+        <div style="font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#9ca3af">Publication</div>
+      </div>
+
+      <div class="reveal d2" style="background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:12px;padding:2rem 1.5rem;text-align:center;transition:all .35s;cursor:default" onmouseenter="this.style.borderColor='#b30000';this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 40px rgba(179,0,0,.1)'" onmouseleave="this.style.borderColor='rgba(0,0,0,.07)';this.style.transform='';this.style.boxShadow=''">
+        <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:800;color:#0a0a0a;margin-bottom:6px">Commoner</div>
+        <div style="font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#9ca3af">Newspaper</div>
+      </div>
+
+      <div class="reveal d3" style="background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:12px;padding:2rem 1.5rem;text-align:center;transition:all .35s;cursor:default" onmouseenter="this.style.borderColor='#b30000';this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 40px rgba(179,0,0,.1)'" onmouseleave="this.style.borderColor='rgba(0,0,0,.07)';this.style.transform='';this.style.boxShadow=''">
+        <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:800;color:#0a0a0a;margin-bottom:6px">The Nation</div>
+        <div style="font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#9ca3af">Newspaper</div>
+      </div>
+
+      <div class="reveal d4" style="background:#b30000;border:1px solid #b30000;border-radius:12px;padding:2rem 1.5rem;text-align:center;transition:all .35s;cursor:default;box-shadow:0 0 24px rgba(179,0,0,.3)" onmouseenter="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 40px rgba(179,0,0,.4)'" onmouseleave="this.style.transform='';this.style.boxShadow='0 0 24px rgba(179,0,0,.3)'">
+        <div style="font-family:'Playfair Display',serif;font-size:.9rem;font-weight:800;color:#fff;margin-bottom:6px">Urban Express</div>
+        <div style="font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7)">Founder &amp; Editor</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="section-pad" style="background:#0a0a0a;text-align:center">
+  <div class="container">
+    <h2 class="reveal" style="font-family:'Playfair Display',serif;color:#fff;margin-bottom:16px">Interested in Working Together?</h2>
+    <p class="reveal" style="color:rgba(255,255,255,.45);max-width:520px;margin:0 auto 32px;line-height:1.75">Olusegun is available for media collaborations, speaking engagements, consultancy, and editorial partnerships.</p>
+    <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="contact.html" class="btn-primary">Start a Conversation</a>
+      <a href="publications.html" class="btn-outline" style="border-color:rgba(255,255,255,.2);color:rgba(255,255,255,.7)" onmouseenter="this.style.borderColor='#b30000';this.style.color='#b30000'" onmouseleave="this.style.borderColor='rgba(255,255,255,.2)';this.style.color='rgba(255,255,255,.7)'">View Publications</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo" style="margin-bottom:8px">Olusegun<span>.</span>Ariyo</div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><div class="nav-logo-placeholder" style="height:28px;font-size:.62rem">UEN</div><span style="font-size:.72rem;color:rgba(255,255,255,.3)">Urban Express News</span></div>
+        <p style="font-size:.875rem;line-height:1.7;max-width:280px;color:rgba(255,255,255,.4)">Journalist, publisher, urban planner, and social justice advocate dedicated to truth and equity across Nigeria.</p>
+        <div class="social-links">
+          <a href="https://twitter.com/olusegunariyo" target="_blank" rel="noopener" class="social-link" aria-label="Twitter"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+          <a href="https://linkedin.com/in/olusegunariyo" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><svg fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://urbanexpresslive.com" target="_blank" rel="noopener" class="social-link" aria-label="Urban Express News"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg></a>
+          <a href="mailto:hello@olusegunariyo.com" class="social-link" aria-label="Email"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="career.html">Career</a></li><li><a href="publications.html">Publications</a></li><li><a href="gallery.html">Gallery</a></li></ul></div>
+      <div class="footer-col"><h4>Explore</h4><ul><li><a href="advocacy.html">Advocacy</a></li><li><a href="https://urbanexpresslive.com" target="_blank" rel="noopener">News Platform ↗</a></li><li><a href="contact.html">Contact</a></li><li><a href="publications.html#land-guide">Property Guide</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li style="color:rgba(255,255,255,.4);font-size:.875rem">Lagos, Nigeria</li><li><a href="mailto:hello@olusegunariyo.com" style="font-size:.875rem">hello@olusegunariyo.com</a></li><li><a href="https://urbanexpresslive.com" target="_blank" rel="noopener" style="font-size:.875rem">urbanexpresslive.com ↗</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span class="current-year">2025</span> Olusegun Ariyo. All rights reserved.</p>
+      <div style="display:flex;gap:20px;align-items:center"><a href="#">Privacy Policy</a><a href="#">Terms</a><button id="backToTop">Back to Top ↑</button></div>
+    </div>
+  </div>
+</footer>
+<button id="backToTopBtn" aria-label="Back to top"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/js/site.js"></script>
+<style>@media(max-width:768px){[style*="repeat(5,1fr)"]{grid-template-columns:repeat(2,1fr)!important}[style*="repeat(3,1fr)"]{grid-template-columns:1fr 1fr!important}}</style>
+</body>
+</html>

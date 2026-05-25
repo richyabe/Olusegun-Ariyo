@@ -1,0 +1,237 @@
+/* ============================================================
+   OLUSEGUN ARIYO — print.css
+   Clean print layout stripping all interactive/animated elements
+   ============================================================ */
+
+@media print {
+
+  /* ── RESET ALL DECORATIVE ── */
+  *, *::before, *::after {
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    animation: none !important;
+    transition: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* ── BASE ── */
+  html, body {
+    font-size: 11pt;
+    line-height: 1.55;
+    color: #000 !important;
+    background: #fff !important;
+    overflow: visible !important;
+    cursor: auto !important;
+  }
+
+  /* ── HIDE NON-PRINT ELEMENTS ── */
+  nav,
+  #navbar,
+  .mobile-menu,
+  .nav-mobile-btn,
+  #mobileMenuBtn,
+  footer,
+  .site-footer,
+  #scrollProgress,
+  .loading-screen,
+  #loadingScreen,
+  .cursor-dot,
+  .cursor-outline,
+  #cursorDot,
+  #cursorOutline,
+  #backToTopBtn,
+  #backToTop,
+  .btn-primary,
+  .btn-outline,
+  .btn-glass,
+  .dark-toggle,
+  #darkModeToggle,
+  .red-streak,
+  .glass-orb,
+  #particles-js,
+  #particlesCanvas,
+  .newsletter-form,
+  .pub-filter,
+  .gal-filter,
+  .news-tab,
+  #lightbox,
+  .no-print,
+  button:not([type="submit"]),
+  .marquee-wrap,
+  .red-divider {
+    display: none !important;
+  }
+
+  /* ── LAYOUT ── */
+  .container {
+    max-width: 100% !important;
+    padding: 0 1cm !important;
+    margin: 0 !important;
+  }
+
+  section,
+  .section-pad {
+    padding: 1.2cm 0 !important;
+    min-height: 0 !important;
+    page-break-inside: avoid;
+  }
+
+  /* ── GRIDS → STACK ── */
+  [style*="display:grid"],
+  [style*="display: grid"] {
+    display: block !important;
+  }
+  [style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── TYPOGRAPHY ── */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', serif !important;
+    color: #000 !important;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    orphans: 3;
+    widows: 3;
+  }
+  h1 { font-size: 22pt; margin: 1.2cm 0 0.4cm; }
+  h2 { font-size: 16pt; margin: 1cm 0 0.35cm; }
+  h3 { font-size: 13pt; margin: 0.8cm 0 0.3cm; }
+  h4 { font-size: 11pt; margin: 0.6cm 0 0.25cm; }
+  p  { margin: 0 0 0.4cm; orphans: 4; widows: 4; }
+
+  /* ── LINKS ── */
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+  a[href^="http"]::after,
+  a[href^="https"]::after {
+    content: " <" attr(href) ">";
+    font-size: 8pt;
+    color: #555;
+    font-weight: normal;
+  }
+  a[href^="#"]::after,
+  a[href^="mailto"]::after,
+  a[href^="javascript"]::after,
+  .nav-logo::after {
+    content: "" !important;
+  }
+
+  /* ── IMAGES ── */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid;
+    border-radius: 0 !important;
+  }
+  .img-placeholder {
+    display: none !important;
+  }
+
+  /* ── CARDS ── */
+  .glass-card,
+  .glass {
+    background: #fff !important;
+    border: 1px solid #ccc !important;
+    border-radius: 0 !important;
+    padding: 0.5cm !important;
+    margin: 0.3cm 0 !important;
+    break-inside: avoid;
+  }
+
+  /* ── LISTS ── */
+  ul, ol {
+    padding-left: 1.2em;
+    margin: 0.3cm 0;
+  }
+  li { margin: 0.15cm 0; page-break-inside: avoid; }
+
+  /* ── TABLES ── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.5cm 0;
+    page-break-inside: avoid;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.2cm 0.3cm;
+    text-align: left;
+    font-size: 10pt;
+  }
+  th { background: #f0f0f0 !important; font-weight: bold; }
+  tr:nth-child(even) td { background: #fafafa !important; }
+
+  /* ── PRINT HEADER (appears on each page) ── */
+  body::before {
+    content: "Olusegun Ariyo  —  Journalist · Publisher · Urban Planner · Advocate";
+    display: block;
+    font-size: 9pt;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 0 0.4cm;
+    margin-bottom: 0.6cm;
+    border-bottom: 2px solid #b30000;
+    color: #333;
+  }
+
+  /* ── PAGE SETTINGS ── */
+  @page {
+    size: A4 portrait;
+    margin: 1.8cm 2cm;
+  }
+  @page :first {
+    margin-top: 1.2cm;
+  }
+
+  /* ── FORCED PAGE BREAKS ── */
+  .page-break-before { page-break-before: always; }
+  .page-break-after  { page-break-after:  always; }
+  .no-page-break     { page-break-inside: avoid; }
+
+  /* ── SUPPRESS COLORS ── */
+  .text-primary,
+  .text-primary-red,
+  [style*="color:#b30000"],
+  [style*="color: #b30000"] {
+    color: #000 !important;
+  }
+  [style*="background:#b30000"],
+  [style*="background: #b30000"],
+  [style*="background-color:#b30000"] {
+    background: #999 !important;
+    color: #fff !important;
+  }
+
+  /* ── COUNTER NUMBERS: show final value ── */
+  .counter::after {
+    content: attr(data-target) "+";
+  }
+
+  /* ── SECTION EYEBROW ── */
+  .section-eyebrow {
+    display: block !important;
+    font-size: 8pt;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: #555 !important;
+    margin-bottom: 0.2cm;
+  }
+  .section-eyebrow::before,
+  .section-eyebrow::after {
+    display: none !important;
+  }
+
+  /* ── TIMELINE ── */
+  .timeline-item {
+    border-left: 2px solid #ccc;
+    padding-left: 0.5cm;
+    margin-bottom: 0.6cm;
+  }
+}
