@@ -16,7 +16,44 @@
   <!-- <link rel="stylesheet" href="assets/css/animations.css"/> -->
   <!-- <link rel="stylesheet" href="assets/css/print.css" media="print"/> -->
 </head>
-<body>
+
+<!-- LOADER -->
+<div class="loading-screen" id="loadingScreen"><div class="loader"></div><span class="loader-text">Gallery</span></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-outline" id="cursorOutline"></div>
+<div id="scrollProgress"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-placeholder" title="Urban Express News"><img src="assets/images/logo.jpg" alt=""></div>
+      <span>Olusegun<span>.</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="publications.html" >Publications</a></li>
+      <li><a href="advocacy.html">Advocacy</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="https://urbanexpresslive.com" target="_blank" rel="noopener">News</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:10px">
+      <button class="dark-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <button class="nav-mobile-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="career.html">Career</a>
+  <a href="publications.html" class="active">Publications</a><a href="advocacy.html">Advocacy</a><a href="gallery.html">Gallery</a>
+  <a href="https://urbanexpresslive.com" target="_blank" rel="noopener">News ↗</a>
+  <a href="contact.html" class="m-cta">Contact Me</a>
+</div>
   <!-- Gallery Hero -->
 <section class="pt-32 pb-16 bg-gradient-to-br from-white to-red-50/20">
   <div class="max-w-7xl mx-auto px-6 text-center reveal">
